@@ -183,7 +183,7 @@ class Xls(BaseStrategy):
             self._trader.wait(0.2)
             count -= 1
 
-        temp_path = tempfile.mktemp(suffix=".csv")
+        temp_path = tempfile.mktemp(suffix=".csv", dir=r"c:\temp")
         self._set_foreground(self._trader.app.top_window())
 
         # alt+s保存，alt+y替换已存在的文件
