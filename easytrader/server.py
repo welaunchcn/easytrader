@@ -121,7 +121,13 @@ def post_cancel_entrust():
 
     return jsonify(res), 201
 
+@app.route("/refresh", methods=["GET"])
+@error_handle
+def get_refresh():
+    user = global_store["user"]
+    user.refresh()
 
+    return jsonify({"msg": "exit success"}), 200
 @app.route("/exit", methods=["GET"])
 @error_handle
 def get_exit():

@@ -71,6 +71,9 @@ class RemoteClient:
     def auto_ipo(self):
         return self.common_get("auto_ipo")
 
+    def refresh(self):
+        return self.common_get("refresh")
+
     def exit(self):
         return self.common_get("exit")
 
