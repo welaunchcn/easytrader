@@ -76,15 +76,15 @@ return::
 """
 
 setup(
-    name="easytrader",
+    name="easytrader-welaunch",
     version="0.18.6",
     description="A utility for China Stock Trade",
     long_description=long_desc,
-    author="shidenggui",
-    author_email="longlyshidenggui@gmail.com",
+    author="welaunch",
+    author_email="welaunch@welaunch.cn",
     license="BSD",
-    url="https://github.com/shidenggui/easytrader",
-    keywords="China stock trade",
+    url="https://github.com/welaunch/easytrader",
+    keywords="",
     install_requires=[
         "requests",
         "six",
